@@ -12,7 +12,7 @@ public class heap
 			sink(a, k, n);
 		while (n > 1)
 		{
-			exch(a, 1, n--);
+			exch(a, 1, n--);//
 			sink(a, 1, n);
 		}
 	}

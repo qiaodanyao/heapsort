@@ -28,7 +28,7 @@ public class Evaluate
 				else if (op.equals("sqrt"))	v = Math.sqrt(v);
 				vals.push(v);
 			}	//如果字符既非运算符也不是括号将他作为double值压入栈
-			else vals.push(Double.parseDouble(s));
+			else vals.push(Double.parseDouble(s.trim()));
 		}
 		StdOut.println(vals.pop());
 	}
